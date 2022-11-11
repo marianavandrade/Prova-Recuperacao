@@ -1,0 +1,59 @@
+<html>
+
+<body>
+    <h2> Prova de tecnologias </h2>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html" onclick="home();"> Home </a></li>
+            <li><a href="#" onclick="cadastrar();"> cadastro </a></li>
+            <li><a href="#" onclick="tarefas();"> Tarefas </a></li>
+            <li><a href="#"> Sobre </a></li>
+        </ul>
+    </div>
+    <div id="centro">
+        <div id="tarefas"> Tarefa:
+            <input id="nome" type="text" placeholder="Nome"><br>
+            <input type="text" placeholder="login"><br>
+            <input class="botao">
+            <button class="botao"> Adicionar </button>
+            <div>
+                <div id="imagem">
+                    <img src="smile.jpg" width="200" height="200">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="h"></div>
+</body>
+
+</html>
+<script>
+    //Questão_01
+
+    document.getElementsByTagName("h2")[0].style.color = "Pink";
+    document.getElementsByTagName("h2")[0].style.font = "Arial";
+
+    //Questão_02
+
+    document.getElementsByTagName("h2")[0].innerHTML = "Prova de Web Avançado";
+
+    //Questão_03
+
+    var bnt = document.getElementsByClassName("botao")[0]
+    document.getElementsByTagName("a")[3].innerHTML = bnt.value;
+
+    //Questão_04
+
+    var p = document.createElement("p")
+    p.innerHTML = "Mariana";
+
+    //Questão_05
+
+    var btn = ducument.getElementsByClassName("botao")[1];
+    btn.addEventListener("click",
+        function() {
+            btn.remove();
+        })
+
+    //Questão_06
+</script>
